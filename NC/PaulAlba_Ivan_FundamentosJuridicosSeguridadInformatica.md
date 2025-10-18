@@ -18,6 +18,7 @@ poner ejemplos de valores que, a vuestro juicio, son indudablemente bienes jurí
 # DEEPSEEK
 
 Prompts:
+![imagen Chatgpt 1](https://github.com/IES-Rafael-Alberti/25-26-Ciberseguridad-Grupo-5/blob/main/PPS/images/infraestructuranode1.png)
 PREGUNTA 1
 
 
