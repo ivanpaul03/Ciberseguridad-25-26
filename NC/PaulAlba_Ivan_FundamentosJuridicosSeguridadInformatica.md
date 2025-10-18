@@ -4,15 +4,17 @@ https://docs.google.com/document/d/1Vp-Z1ZP5MQxVMNlwiujhzGEyQglRwPA0/edit?usp=dr
 
 ![imagen portada](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/images/portadaFundamentos.png)
 
+---
+
 ## Índice
 
-### DEEPSEEK 2
+1. [JS-***Node.js***](https://github.com/IES-Rafael-Alberti/25-26-Ciberseguridad-Grupo-5/blob/main/PPS/InfraestructuraDesarrolloWeb.md#1-js-nodejs)
+2. [Python-***Django***](https://github.com/IES-Rafael-Alberti/25-26-Ciberseguridad-Grupo-5/blob/main/PPS/InfraestructuraDesarrolloWeb.md#2-python-django)
+3. [JS-***SpringBoot***](https://github.com/IES-Rafael-Alberti/25-26-Ciberseguridad-Grupo-5/blob/main/PPS/InfraestructuraDesarrolloWeb.md#3-js-springboot)
+4. [PHP-***WordPress***](https://github.com/IES-Rafael-Alberti/25-26-Ciberseguridad-Grupo-5/blob/main/PPS/InfraestructuraDesarrolloWeb.md#4-PHP-WordPress)
+5. [***.NET***](https://github.com/IES-Rafael-Alberti/25-26-Ciberseguridad-Grupo-5/blob/main/PPS/InfraestructuraDesarrolloWeb.md#5-net)
 
-### CHATGPT 3
-
-### NOTEBOOKLM 5
-
-### GEMINI 7
+---
 
 
 1. Buscad en Internet el término bien jurídico o interés jurídico. ¿Creéis que tiene que existir
@@ -26,11 +28,14 @@ Prompts:
 ![imagen Deepseek 1](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/images/deepseek1.png)
 
 PREGUNTA 1
+
 ![imagen Deepseek 2](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/images/deepseek2.png)
 
 ### PREGUNTA 2 (RESULTADO FINAL)
 
 ![imagen Deepseek 3](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/images/deepseek3.png)
+
+---
 
 2. ¿Existe alguna diferencia entre una norma penal y las demás normas jurídicas?
 
@@ -47,6 +52,8 @@ Prompts:
 ### PREGUNTA 2 (RESULTADO FINAL)
 
 ![imagen Chatgpt 3](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/images/chatgpt3.png)
+
+---
 
 3. ¿Creéis que Internet necesita algún tipo de regulación jurídica? Proponed aspectos que
 penséis que van a necesitar regulación.
@@ -68,6 +75,8 @@ PREGUNTA 1
 ![imagen Notebooklm 4](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/images/notebooklm4.png)
 
 ![imagen Notebooklm 5](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/images/notebooklm5.png)
+
+---
 
 4. Clasificad los términos inferiores en estas categorías: a) derechos y libertades; b) sectores
 o ramas del ordenamiento jurídico; c) sanciones y d) normas jurídicas.
