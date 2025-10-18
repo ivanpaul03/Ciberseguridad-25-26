@@ -1,6 +1,6 @@
 # Fundamentos Jurídicos de la Seguridad Informática
 
-https://docs.google.com/document/d/1Vp-Z1ZP5MQxVMNlwiujhzGEyQglRwPA0/edit?usp=drive_link&ouid=118291516569558517493&rtpof=true&sd=true
+https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md
 
 ![imagen portada](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/images/portadaFundamentos.png)
 
