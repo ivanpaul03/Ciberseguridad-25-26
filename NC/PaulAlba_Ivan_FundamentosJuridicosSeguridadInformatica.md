@@ -1,4 +1,4 @@
-# Fundamentos Jurídicos de la Seguridad Informática
+<p style="text-align: center;"># Fundamentos Jurídicos de la Seguridad Informática</p>
 
 https://docs.google.com/document/d/1Vp-Z1ZP5MQxVMNlwiujhzGEyQglRwPA0/edit?usp=drive_link&ouid=118291516569558517493&rtpof=true&sd=true
 
