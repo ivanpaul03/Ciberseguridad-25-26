@@ -2,7 +2,7 @@
 
 https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/Pa%C3%BAlAlba_Iv%C3%A1n_UsoRAG.md
 
-![imagen portada](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/images/portadaFundamentos.png)
+![imagen portada](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/Pa%C3%BAlAlba_Iv%C3%A1n_UsoRAG.md#notebooklm)
 
 ---
 
