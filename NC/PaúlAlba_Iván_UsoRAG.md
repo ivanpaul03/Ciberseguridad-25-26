@@ -1,6 +1,6 @@
-# Fundamentos Jurídicos de la Seguridad Informática
+# Uso de RAG para consultas sobre normativa
 
-https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md
+https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_UsoRAG.md
 
 ![imagen portada](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/images/portadaFundamentos.png)
 
