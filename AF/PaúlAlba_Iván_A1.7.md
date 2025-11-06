@@ -16,31 +16,7 @@ https://github.com/ivanpaul03/Ciberseguridad-25-26/edit/main/AF/Pa%C3%BAlAlba_Iv
 
 ---
 
-
-1. Buscad en Internet el término bien jurídico o interés jurídico. ¿Creéis que tiene que existir
-un mínimo consenso en la sociedad sobre qué debe considerarse bien jurídico? ¿Podríais
-poner ejemplos de valores que, a vuestro juicio, son indudablemente bienes jurídicos?
-
-# DEEPSEEK
-
-
-# **A1.7. Captura y Análisis de Tráfico de Red**
-
-![][image1]
-
-**Índice**
-
-[**1\. Preparación de la Herramienta:	2**](#preparación-de-la-herramienta:)
-
-[**2\. Captura de Tráfico:	2**](#captura-de-tráfico:)
-
-[**3\. Conexión a un Sitio Web:	3**](#conexión-a-un-sitio-web:)
-
-[**4\. Análisis del Tráfico Capturado:	4**](#análisis-del-tráfico-capturado:)
-
-[**5\. Conclusión:	5**](#conclusión:)
-
-1. # **Preparación de la Herramienta:** {#preparación-de-la-herramienta:}
+# **1. Preparación de la Herramienta:**
 
 En esta etapa se realiza la instalación de Wireshark en mi equipo (descargando el ejecutable de su página oficial).
 
