@@ -8,11 +8,11 @@ https://github.com/ivanpaul03/Ciberseguridad-25-26/edit/main/AF/Pa%C3%BAlAlba_Iv
 
 ## Índice
 
-1. [*Preparación de la Herramienta:*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#deepseek)
-2. [*Captura de Tráfico:*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#chatgpt)
-3. [*Conexión a un Sitio Web:*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#notebooklm)
-4. [*Análisis del Tráfico Capturado:*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#gemini)
-5. [*Conclusión:*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#gemini)
+1. [*Preparación de la Herramienta*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#preparaci%C3%B3n-de-la-herramienta-preparaci%C3%B3n-de-la-herramienta)
+2. [*Captura de Tráfico*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#chatgpt)
+3. [*Conexión a un Sitio Web*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#notebooklm)
+4. [*Análisis del Tráfico Capturado*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#gemini)
+5. [*Conclusión*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#gemini)
 
 ---
 
