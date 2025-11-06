@@ -1,5 +1,31 @@
 # **A1.7. Captura y Análisis de Tráfico de Red**
 
+https://github.com/ivanpaul03/Ciberseguridad-25-26/edit/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md
+
+![imagen portada](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/images/wireshark1.png)
+
+---
+
+## Índice
+
+1. [*Preparación de la Herramienta:*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#deepseek)
+2. [*Captura de Tráfico:*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#chatgpt)
+3. [*Conexión a un Sitio Web:*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#notebooklm)
+4. [*Análisis del Tráfico Capturado:*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#gemini)
+5. [*Conclusión:*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#gemini)
+
+---
+
+
+1. Buscad en Internet el término bien jurídico o interés jurídico. ¿Creéis que tiene que existir
+un mínimo consenso en la sociedad sobre qué debe considerarse bien jurídico? ¿Podríais
+poner ejemplos de valores que, a vuestro juicio, son indudablemente bienes jurídicos?
+
+# DEEPSEEK
+
+
+# **A1.7. Captura y Análisis de Tráfico de Red**
+
 ![][image1]
 
 **Índice**
