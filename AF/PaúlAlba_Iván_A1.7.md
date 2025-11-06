@@ -1,6 +1,6 @@
 # **A1.7. Captura y Análisis de Tráfico de Red**
 
-https://github.com/ivanpaul03/Ciberseguridad-25-26/edit/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md
+https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md
 
 ![imagen portada](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/images/wireshark1.png)
 
