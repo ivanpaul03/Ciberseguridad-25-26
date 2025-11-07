@@ -1,6 +1,6 @@
 # RAG sobre la LPI
 
-https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md
+https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/Pa%C3%BAlAlba_Iv%C3%A1n_RAGSobreLPI.md
 
 ![imagen portada](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/images/portadaFundamentos.png)
 
@@ -8,14 +8,14 @@ https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_Fu
 
 ## Índice
 
-1. [*Caso Práctico 1*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#deepseek)
-2. [*Caso Práctico 2*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#chatgpt)
-3. [*Consulta y Comparación de Información*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/PaulAlba_Ivan_FundamentosJuridicosSeguridadInformatica.md#notebooklm)
+1. [*Caso Práctico 1*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/Pa%C3%BAlAlba_Iv%C3%A1n_RAGSobreLPI.md#caso-pr%C3%A1ctico-1-derechos-de-creaci%C3%B3n-art%C3%ADstica-propiedad-intelectual)
+2. [*Caso Práctico 2*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/Pa%C3%BAlAlba_Iv%C3%A1n_RAGSobreLPI.md#caso-pr%C3%A1ctico-2-derechos-de-propiedad-industrial-marcas)
+3. [*Consulta y Comparación de Información*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/NC/Pa%C3%BAlAlba_Iv%C3%A1n_RAGSobreLPI.md#consulta-y-comparaci%C3%B3n-de-informaci%C3%B3n)
 
 ---
 # Caso Práctico 1: Derechos de Creación Artística (Propiedad Intelectual)
 
-## Título del Caso: La Explotación Ilícita de un Diseño de Moda Digital y Físico
+## La Explotación Ilícita de un Diseño de Moda Digital y Físico
 
 ### Antecedentes
 
@@ -59,7 +59,7 @@ También procede la **indemnización por daño moral**, incluso en ausencia de p
 
 # Caso Práctico 2: Derechos de Propiedad Industrial (Marcas)
 
-## Título del Caso: La Marca Olfativa Rechazada por Falta de Distintividad Intrínseca
+## La Marca Olfativa Rechazada por Falta de Distintividad Intrínseca
 
 ### Antecedentes
 
