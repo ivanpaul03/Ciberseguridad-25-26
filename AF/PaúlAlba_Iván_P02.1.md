@@ -97,9 +97,7 @@ Los pasos que seguí fueron:
 
 Para la práctica necesité obtener una copia de la memoria RAM de la máquina virtual. Para ello utilicé la herramienta incluida con VirtualBox. El comando empleado fue:
 
-```
-VBoxManage debugvm "FORENSIC_10" dumpvmcore --filename forensic10.raw
-```
+<img width="1782" height="189" alt="image" src="https://github.com/user-attachments/assets/ff639a2d-a85c-49a5-b2ad-4d5696ec388f" />
 
 Este comando creó un archivo con el contenido de la memoria tal y como estaba en el momento en que se ejecutó. No modifica nada dentro de la máquina, simplemente genera un archivo externo que luego se puede revisar con herramientas forenses.
 
