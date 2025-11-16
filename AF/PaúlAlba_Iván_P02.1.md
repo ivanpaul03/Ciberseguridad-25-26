@@ -91,6 +91,53 @@ Los pasos que seguí fueron:
 
 ## MEMORIA RAM
 
+# Recolección y almacenamiento de evidencias (Memoria RAM)
+
+## 1. Obtención de la memoria RAM
+
+Para la práctica necesité obtener una copia de la memoria RAM de la máquina virtual. Para ello utilicé la herramienta incluida con VirtualBox. El comando empleado fue:
+
+```
+VBoxManage debugvm "FORENSIC_10" dumpvmcore --filename forensic10.raw
+```
+
+Este comando creó un archivo con el contenido de la memoria tal y como estaba en el momento en que se ejecutó. No modifica nada dentro de la máquina, simplemente genera un archivo externo que luego se puede revisar con herramientas forenses.
+
+Una vez que se generó el archivo, lo guardé como parte de las evidencias de la práctica y continué con su análisis.
+
+## 2. Tipo de evidencia
+
+La captura obtenida se considera:
+
+* **Evidencia volátil**, porque pertenece a la memoria que desaparece cuando la máquina se apaga.
+* **Evidencia generada automáticamente**, ya que representa el estado temporal del sistema.
+* **Evidencia relevante**, porque ayuda a identificar qué estaba en ejecución al momento del incidente.
+
+## 3. Cadena de custodia
+
+Registré lo siguiente:
+
+* Quién realizó la captura: yo.
+* Qué herramienta se usó: la utilidad de VirtualBox.
+* La fecha y hora de la creación del archivo.
+* La ubicación donde se guardó el archivo original.
+
+Luego almacené una copia en la carpeta destinada a las evidencias, asegurándome de no modificar el archivo después de su creación.
+
+## 4. Conservación de la evidencia
+
+La captura se mantuvo en su formato original. También generé un valor de verificación para demostrar que no ha cambiado desde que fue creada. El archivo quedó almacenado en el repositorio seguro de evidencias.
+
+## 5. Metodología aplicada
+
+Los pasos que seguí fueron:
+
+1. Ejecutar el comando para crear la captura de memoria.
+2. Guardar el archivo generado como evidencia.
+3. Registrar toda la información relacionada con el proceso.
+4. Revisar el contenido del archivo para identificar elementos relevantes.
+5. Mantener el archivo protegido y sin alteraciones mientras duraba la práctica.
+
 Para este proyecto, se trabajó con un archivo que contenía información que representaba la memoria de la máquina. Se realizó la revisión de este archivo como si fuera una captura de RAM, guardando una copia segura en la carpeta de evidencias y registrando todos los pasos para la cadena de custodia.
 
 ## Triaje de la evidencia
