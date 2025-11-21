@@ -335,12 +335,12 @@ Estructura final:
 
 # ANEXO -- Índice de Hallazgos
 
-1. [*Hallazgo 001: Archivo Sospechoso en Escritorio*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#1-preparaci%C3%B3n-de-la-herramienta)
-2. [*Hallazgo 002: Captura de Memoria RAM*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#2-captura-de-tr%C3%A1fico)
-3. [*## Hallazgo 003: Exploit crea_user.py*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#3-conexi%C3%B3n-a-un-sitio-web)
-4. [*Hallazgo 004: Salida de Comando tasklist*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#4-an%C3%A1lisis-del-tr%C3%A1fico-capturado)
-5. [*Hallazgo 005: Salida de Comando netstat*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n)
-6. [*Hallazgo 006: Salida de Comando ipconfig*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n)
-7. [*Hallazgo 007: Salida de Comando systeminfo*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n)
+1. [*Hallazgo 001: Archivo Sospechoso en Escritorio*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-001-archivo-sospechoso-en-escritorio)
+2. [*Hallazgo 002: Captura de Memoria RAM*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-002-captura-de-memoria-ram)
+3. [*## Hallazgo 003: Exploit crea_user.py*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-003-exploit-crea_userpy)
+4. [*Hallazgo 004: Salida de Comando tasklist*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-004-salida-de-comando-tasklist)
+5. [*Hallazgo 005: Salida de Comando netstat*]([https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-005-salida-de-comando-netstat))
+6. [*Hallazgo 006: Salida de Comando ipconfig*]([https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-006-salida-de-comando-ipconfig))
+7. [*Hallazgo 007: Salida de Comando systeminfo*]([https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-007-salida-de-comando-systeminfo))
 8. [*Hallazgo 008: Salida de Comando dir /s*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n)
 9. [*Hallazgo 009: Salida de Comando wmic*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n)
