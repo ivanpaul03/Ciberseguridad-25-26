@@ -337,7 +337,7 @@ Estructura final:
 
 1. [*Hallazgo 001: Archivo Sospechoso en Escritorio*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-001-archivo-sospechoso-en-escritorio)
 2. [*Hallazgo 002: Captura de Memoria RAM*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-002-captura-de-memoria-ram)
-3. [*## Hallazgo 003: Exploit crea_user.py*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-003-exploit-crea_userpy)
+3. [*Hallazgo 003: Exploit crea_user.py*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-003-exploit-crea_userpy)
 4. [*Hallazgo 004: Salida de Comando tasklist*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-004-salida-de-comando-tasklist)
 5. [*Hallazgo 005: Salida de Comando netstat*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-005-salida-de-comando-netstat)
 6. [*Hallazgo 006: Salida de Comando ipconfig*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_P02.3.md#hallazgo-006-salida-de-comando-ipconfig))
