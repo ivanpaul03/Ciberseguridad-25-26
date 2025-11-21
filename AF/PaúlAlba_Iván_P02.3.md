@@ -1,4 +1,4 @@
-# Informe Forense -- Análisis Técnico y Ejecutivo
+# Informe Forense - Análisis Técnico y Ejecutivo
 
 ## INFORME EJECUTIVO
 
@@ -7,7 +7,7 @@
 Este informe recoge el análisis forense realizado sobre una máquina
 comprometida proporcionada en formato .ova. El objetivo del análisis fue
 identificar vestigios digitales relevantes, clasificarlos, documentar la
-cadena de custodia y garantizar la integridad de toda evidencia.\
+cadena de custodia y garantizar la integridad de toda evidencia.
 Se analizaron tres fuentes principales: **disco duro**, **memoria RAM**,
 y **triaje inicial**.
 
@@ -46,7 +46,7 @@ y **triaje inicial**.
 
 #### 1.1 Localización y adquisición
 
-Se recibió una copia de la máquina en formato `.ova`.\
+Se recibió una copia de la máquina en formato `.ova`.
 Pasos realizados: 1. Importación de la máquina virtual. 2. Extracción
 del archivo `.vmdk`. 3. Conversión a `.raw` mediante `qemu-img`. 4.
 Análisis del contenido usando FTK Imager.
@@ -56,27 +56,27 @@ administrador que contenía instrucciones relacionadas con el incidente.
 
 #### 1.2 Tipo de evidencia
 
--   Evidencia digital almacenada.\
--   Archivo creado manualmente.\
+-   Evidencia digital almacenada.
+-   Archivo creado manualmente.
 -   Evidencia relevante.
 
 #### 1.3 Cadena de custodia
 
--   Ubicación del hallazgo: Escritorio del administrador.\
--   Fecha de hallazgo: **14/11/2025**.\
+-   Ubicación del hallazgo: Escritorio del administrador.
+-   Fecha de hallazgo: **14/11/2025**.
 -   Copia guardada en directorio de evidencias.
 
 #### 1.4 Conservación
 
--   Archivo guardado en directorio seguro.\
--   Hash generado para verificación.\
+-   Archivo guardado en directorio seguro.
+-   Hash generado para verificación.
 -   La imagen `.raw` se mantuvo sin modificaciones.
 
 #### 1.5 Metodología aplicada
 
--   Conversión del disco.\
--   Análisis del sistema de archivos.\
--   Extracción de archivo sospechoso.\
+-   Conversión del disco.
+-   Análisis del sistema de archivos.
+-   Extracción de archivo sospechoso.
 -   Registro completo del proceso.
 
 ------------------------------------------------------------------------
@@ -91,27 +91,27 @@ Se utilizó VirtualBox para generar la copia:
 
 #### 2.2 Tipo de evidencia
 
--   Volátil.\
--   Generada automáticamente.\
+-   Volátil.
+-   Generada automáticamente.
 -   Relevante para el estado temporal del sistema.
 
 #### 2.3 Cadena de custodia
 
--   Realizada por: Iván Paúl Alba\
--   Herramienta: VirtualBox\
+-   Realizada por: Iván Paúl Alba
+-   Herramienta: VirtualBox
 -   Se registró fecha, hora y ubicación de almacenamiento.
 
 #### 2.4 Conservación
 
--   Archivo sin alterar.\
--   Valor hash calculado.\
+-   Archivo sin alterar.
+-   Valor hash calculado.
 -   Guardado en repositorio seguro.
 
 #### 2.5 Metodología aplicada
 
--   Ejecución del comando.\
--   Registro de la operación.\
--   Revisión posterior de memoria.\
+-   Ejecución del comando.
+-   Registro de la operación.
+-   Revisión posterior de memoria.
 -   Preservación segura.
 
 ------------------------------------------------------------------------
@@ -120,11 +120,11 @@ Se utilizó VirtualBox para generar la copia:
 
 #### 3.1 Recolección
 
-Comandos ejecutados: - `tasklist`\
-- `netstat -nao`\
-- `ipconfig /all`\
-- `systeminfo`\
-- `dir /s`\
+Comandos ejecutados: - `tasklist`
+- `netstat -nao`
+- `ipconfig /all`
+- `systeminfo`
+- `dir /s`
 - `wmic useraccount get name,sid`
 
 Se guardaron las salidas y el exploit `crea_user.py` en una carpeta
@@ -132,15 +132,15 @@ compartida en red.
 
 #### 3.2 Tipo de evidencia
 
--   Digital estable.\
--   Representa el estado del sistema en el triaje.\
+-   Digital estable.
+-   Representa el estado del sistema en el triaje.
 -   Incluye información clave de procesos, red, usuarios y archivos.
 
 #### 3.3 Cadena de custodia
 
--   Analista: Iván Paúl Alba\
--   Fecha: **17/11/2025**\
--   Ubicación original: Sistema comprometido\
+-   Analista: Iván Paúl Alba
+-   Fecha: **17/11/2025**
+-   Ubicación original: Sistema comprometido
 -   Almacenamiento final:
 
 ```{=html}
@@ -165,16 +165,16 @@ Estructura final:
 
 #### 3.5 Metodología aplicada
 
--   Carga de la máquina.\
--   Ejecución de comandos.\
--   Exportación de resultados.\
--   Almacenamiento seguro.\
+-   Carga de la máquina.
+-   Ejecución de comandos.
+-   Exportación de resultados.
+-   Almacenamiento seguro.
 -   Documentación del proceso.
 
 #### 3.6 Registro del triaje
 
--   Analista: **Iván Paúl Alba**\
--   Inicio: 14/11/2025 12:00\
+-   Analista: **Iván Paúl Alba**
+-   Inicio: 14/11/2025 12:00
 -   Cierre: 17/11/2025 13:30
 
 ------------------------------------------------------------------------
