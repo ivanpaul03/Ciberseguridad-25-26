@@ -1,94 +1,184 @@
-# Informe Forense
+# Informe Forense -- Análisis Técnico y Ejecutivo
 
-## Informe Ejecutivo
+## INFORME EJECUTIVO
 
 ### 1. Resumen del Caso
 
-Este informe recoge el análisis forense realizado sobre el sistema
-investigado. El objetivo principal fue identificar vestigios digitales
-relevantes, documentar su ubicación, metadatos y verificar su integridad
-mediante valores hash. Los resultados completos se encuentran detallados
-en el informe técnico y en los anexos.
+Este informe recoge el análisis forense realizado sobre una máquina
+comprometida proporcionada en formato .ova. El objetivo del análisis fue
+identificar vestigios digitales relevantes, clasificarlos, documentar la
+cadena de custodia y garantizar la integridad de toda evidencia.\
+Se analizaron tres fuentes principales: **disco duro**, **memoria RAM**,
+y **triaje inicial**.
 
 ### 2. Hallazgos Clave
 
--   **Hallazgo 1:** Archivo encontrado en `RUTA/DEL/ARCHIVO`. Contenido
-    relevante para la investigación.\
--   **Hallazgo 2:** Registro localizado en `RUTA/DEL/REGISTRO`. Muestra
-    actividad reciente potencialmente sospechosa.\
-    *(Sustituir por hallazgos reales)*
+-   Archivo sospechoso encontrado en el escritorio del usuario
+    administrador, con instrucciones relacionadas con un programa
+    vulnerable.
+-   Captura completa de la **memoria RAM**, permitiendo revisar el
+    estado exacto del sistema en el momento de la obtención.
+-   Evidencias del triaje incluyendo archivos de texto con comandos
+    (`tasklist`, `netstat`, `ipconfig`, `systeminfo`, `dir /s`, `wmic`)
+    y un exploit identificado (`crea_user.py`).
+-   Toda la evidencia almacenada de forma segura y acompañada de sus
+    valores hash.
 
 ### 3. Conclusiones
 
--   La evidencia recopilada confirma actividad reciente en el sistema.
--   Todos los ficheros analizados tienen verificación de integridad
-    mediante hash.
--   Los anexos recogen el detalle técnico completo.
+-   Se confirma actividad maliciosa mediante uso de un exploit y
+    presencia de archivos anómalos.
+-   El análisis del disco, la RAM y el triaje permitió entender el
+    comportamiento del sistema durante el incidente.
+-   La evidencia está íntegra y debidamente registrada.
 
 ### 4. Recomendaciones
 
--   Revisar los ficheros modificados recientemente.
--   Implementar medidas de seguridad y auditoría avanzadas.
--   Asegurar la integridad del sistema mediante controles periódicos.
+-   Aplicar medidas de seguridad adicionales en la máquina.
+-   Revisar y corregir vulnerabilidades existentes.
+-   Mantener controles regulares de registro y monitorización.
 
 ------------------------------------------------------------------------
 
-## Informe Técnico
+## INFORME TÉCNICO
 
-### 1. Introducción
+### 1. Recolección y Almacenamiento de Evidencias -- DISCO DURO
 
-Este documento detalla el análisis forense realizado sobre el
-dispositivo objeto de estudio. Se han seguido buenas prácticas de
-adquisición, preservación, análisis y documentación de evidencias
-digitales.
+#### 1.1 Localización y adquisición
 
-### 2. Metodología
+Se recibió una copia de la máquina en formato `.ova`.\
+Pasos realizados: 1. Importación de la máquina virtual. 2. Extracción
+del archivo `.vmdk`. 3. Conversión a `.raw` mediante `qemu-img`. 4.
+Análisis del contenido usando FTK Imager.
 
-1.  Adquisición de la imagen o acceso controlado al sistema.
-2.  Identificación de vestigios relevantes.
-3.  Extracción de metadatos (MAC times, tamaño lógico, hashes).
-4.  Visualización y documentación del contenido de los archivos.
-5.  Organización de hallazgos en tablas y anexos.
+Se encontró un archivo sospechoso en el escritorio del usuario
+administrador que contenía instrucciones relacionadas con el incidente.
 
-### 3. Hallazgos
+#### 1.2 Tipo de evidencia
 
-A continuación se presentan los hallazgos siguiendo el formato
-requerido.\
-*(Rellena esta tabla para cada vestigio encontrado)*
+-   Evidencia digital almacenada.\
+-   Archivo creado manualmente.\
+-   Evidencia relevante.
 
-#### Ejemplo de Hallazgo
+#### 1.3 Cadena de custodia
 
-  -----------------------------------------------------------------------
-  Elemento                              Detalle
-  ------------------------------------- ---------------------------------
-  **Ruta completa**                     `RUTA/DEL/FICHERO`
+-   Ubicación del hallazgo: Escritorio del administrador.\
+-   Fecha de hallazgo: **14/11/2025**.\
+-   Copia guardada en directorio de evidencias.
 
-  **Contenido**                         Descripción breve o captura
-                                        incluida en anexos
+#### 1.4 Conservación
 
-  **MAC Time**                          Modificación: AAAA-MM-DD
-                                        HH:MM:SS`<br>`{=html}Acceso:
-                                        AAAA-MM-DD
-                                        HH:MM:SS`<br>`{=html}Creación:
-                                        AAAA-MM-DD HH:MM:SS
+-   Archivo guardado en directorio seguro.\
+-   Hash generado para verificación.\
+-   La imagen `.raw` se mantuvo sin modificaciones.
 
-  **Tamaño lógico**                     X bytes
+#### 1.5 Metodología aplicada
 
-  **Hash SHA-256**                      `valorhash...`
-  -----------------------------------------------------------------------
+-   Conversión del disco.\
+-   Análisis del sistema de archivos.\
+-   Extracción de archivo sospechoso.\
+-   Registro completo del proceso.
 
 ------------------------------------------------------------------------
 
-## Anexos
+### 2. Recolección y Almacenamiento -- MEMORIA RAM
 
-### Anexo A: Índice de Hallazgos
+#### 2.1 Obtención de la RAM
 
-*(Completar con lista de rutas y nombre de cada vestigio)*
+Se utilizó VirtualBox para generar la copia:
 
-### Anexo B: Capturas y Contenido Visual
+    VBoxManage debugvm "VM-Nombre" dumpvmcore --filename dump_ram.raw
 
-*(Inserta las capturas correspondientes)*
+#### 2.2 Tipo de evidencia
 
-### Anexo C: Valores Hash
+-   Volátil.\
+-   Generada automáticamente.\
+-   Relevante para el estado temporal del sistema.
 
-*(Tabla completa de hashes para verificación)*
+#### 2.3 Cadena de custodia
+
+-   Realizada por: Iván Paúl Alba\
+-   Herramienta: VirtualBox\
+-   Se registró fecha, hora y ubicación de almacenamiento.
+
+#### 2.4 Conservación
+
+-   Archivo sin alterar.\
+-   Valor hash calculado.\
+-   Guardado en repositorio seguro.
+
+#### 2.5 Metodología aplicada
+
+-   Ejecución del comando.\
+-   Registro de la operación.\
+-   Revisión posterior de memoria.\
+-   Preservación segura.
+
+------------------------------------------------------------------------
+
+### 3. TRIAJE -- Carpeta Compartida en Red
+
+#### 3.1 Recolección
+
+Comandos ejecutados: - `tasklist`\
+- `netstat -nao`\
+- `ipconfig /all`\
+- `systeminfo`\
+- `dir /s`\
+- `wmic useraccount get name,sid`
+
+Se guardaron las salidas y el exploit `crea_user.py` en una carpeta
+compartida en red.
+
+#### 3.2 Tipo de evidencia
+
+-   Digital estable.\
+-   Representa el estado del sistema en el triaje.\
+-   Incluye información clave de procesos, red, usuarios y archivos.
+
+#### 3.3 Cadena de custodia
+
+-   Analista: Iván Paúl Alba\
+-   Fecha: **17/11/2025**\
+-   Ubicación original: Sistema comprometido\
+-   Almacenamiento final:
+
+```{=html}
+<!-- -->
+```
+    \\FORENSE-06\Users\Administrador\Desktop\TriajeEvidencias\
+
+-   Custodia actual: Iván Paúl Alba
+
+#### 3.4 Almacenamiento
+
+Estructura final:
+
+    TriajeEvidencias/
+     ├── crea_user.py
+     ├── tasklist.txt
+     ├── netstat.txt
+     ├── ipconfig.txt
+     ├── systeminfo.txt
+     ├── dirs.txt
+     └── wmic.txt
+
+#### 3.5 Metodología aplicada
+
+-   Carga de la máquina.\
+-   Ejecución de comandos.\
+-   Exportación de resultados.\
+-   Almacenamiento seguro.\
+-   Documentación del proceso.
+
+#### 3.6 Registro del triaje
+
+-   Analista: **Iván Paúl Alba**\
+-   Inicio: 14/11/2025 12:00\
+-   Cierre: 17/11/2025 13:30
+
+------------------------------------------------------------------------
+
+## ANEXO -- Índice de Hallazgos
+
+aaa
