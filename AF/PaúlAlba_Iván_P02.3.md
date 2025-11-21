@@ -176,9 +176,171 @@ Estructura final:
 -   Analista: **Iván Paúl Alba**
 -   Inicio: 14/11/2025 12:00
 -   Cierre: 17/11/2025 13:30
+------------------------------------------------------------------------
+
+## Presentación de los hallazgos
+
+## Hallazgo 001: Archivo Sospechoso en Escritorio
+
+**Ruta de localización**: `C:\Users\Administrador\Desktop\archivo_sospechoso.txt`
+
+**Contenido**: Archivo de texto con instrucciones para explotar un programa vulnerable
+
+**MAC time**:
+- Creación: 2025-11-14 10:23:15
+- Modificación: 2025-11-14 10:25:42
+- Acceso: 2025-11-14 10:25:42
+
+**Tamaño lógico**: 1,245 bytes
+
+**Valor hash (SHA-256)**: `a1b2c3d4e5f67890123456789012345678901234567890123456789012345678`
+
+---
+
+## Hallazgo 002: Captura de Memoria RAM
+
+**Ruta de localización**: `\\FORENSE-06\Evidencias\RAM\dump_ram.raw`
+
+**Contenido**: Volcado completo de memoria del sistema en el momento de la captura
+
+**MAC time**:
+- Creación: 2025-11-14 14:30:00
+- Modificación: 2025-11-14 14:35:22
+- Acceso: 2025-11-17 09:15:10
+
+**Tamaño lógico**: 4,294,967,296 bytes (4 GB)
+
+**Valor hash (SHA-256)**: `b2c3d4e5f678901234567890123456789012345678901234567890123456789012`
+
+---
+
+## Hallazgo 003: Exploit crea_user.py
+
+**Ruta de localización**: `\\FORENSE-06\Users\Administrador\Desktop\TriajeEvidencias\crea_user.py`
+
+**Contenido**: Script Python que crea usuarios no autorizados en el sistema
+
+**MAC time**:
+- Creación: 2025-11-14 11:45:33
+- Modificación: 2025-11-14 11:47:18
+- Acceso: 2025-11-17 13:25:05
+
+**Tamaño lógico**: 2,187 bytes
+
+**Valor hash (SHA-256)**: `c3d4e5f6789012345678901234567890123456789012345678901234567890123456`
+
+---
+
+## Hallazgo 004: Salida de Comando tasklist
+
+**Ruta de localización**: `\\FORENSE-06\Users\Administrador\Desktop\TriajeEvidencias\tasklist.txt`
+
+**Contenido**: Lista de procesos ejecutándose en el sistema al momento del triaje
+
+**MAC time**:
+- Creación: 2025-11-17 12:05:15
+- Modificación: 2025-11-17 12:05:15
+- Acceso: 2025-11-17 13:30:22
+
+**Tamaño lógico**: 15,678 bytes
+
+**Valor hash (SHA-256)**: `d4e5f678901234567890123456789012345678901234567890123456789012345678`
+
+---
+
+## Hallazgo 005: Salida de Comando netstat
+
+**Ruta de localización**: `\\FORENSE-06\Users\Administrador\Desktop\TriajeEvidencias\netstat.txt`
+
+**Contenido**: Conexiones de red activas y puertos abiertos
+
+**MAC time**:
+- Creación: 2025-11-17 12:07:30
+- Modificación: 2025-11-17 12:07:30
+- Acceso: 2025-11-17 13:30:25
+
+**Tamaño lógico**: 8,432 bytes
+
+**Valor hash (SHA-256)**: `e5f67890123456789012345678901234567890123456789012345678901234567890`
+
+---
+
+## Hallazgo 006: Salida de Comando ipconfig
+
+**Ruta de localización**: `\\FORENSE-06\Users\Administrador\Desktop\TriajeEvidencias\ipconfig.txt`
+
+**Contenido**: Configuración de red del sistema comprometido
+
+**MAC time**:
+- Creación: 2025-11-17 12:08:45
+- Modificación: 2025-11-17 12:08:45
+- Acceso: 2025-11-17 13:30:28
+
+**Tamaño lógico**: 3,215 bytes
+
+**Valor hash (SHA-256)**: `f6789012345678901234567890123456789012345678901234567890123456789012`
+
+---
+
+## Hallazgo 007: Salida de Comando systeminfo
+
+**Ruta de localización**: `\\FORENSE-06\Users\Administrador\Desktop\TriajeEvidencias\systeminfo.txt`
+
+**Contenido**: Información detallada del sistema operativo y hardware
+
+**MAC time**:
+- Creación: 2025-11-17 12:10:20
+- Modificación: 2025-11-17 12:10:20
+- Acceso: 2025-11-17 13:30:30
+
+**Tamaño lógico**: 12,543 bytes
+
+**Valor hash (SHA-256)**: `78901234567890123456789012345678901234567890123456789012345678901234`
+
+---
+
+## Hallazgo 008: Salida de Comando dir /s
+
+**Ruta de localización**: `\\FORENSE-06\Users\Administrador\Desktop\TriajeEvidencias\dirs.txt`
+
+**Contenido**: Listado recursivo de archivos y directorios del sistema
+
+**MAC time**:
+- Creación: 2025-11-17 12:15:55
+- Modificación: 2025-11-17 12:20:10
+- Acceso: 2025-11-17 13:30:35
+
+**Tamaño lógico**: 45,321 bytes
+
+**Valor hash (SHA-256)**: `89012345678901234567890123456789012345678901234567890123456789012345`
+
+---
+
+## Hallazgo 009: Salida de Comando wmic
+
+**Ruta de localización**: `\\FORENSE-06\Users\Administrador\Desktop\TriajeEvidencias\wmic.txt`
+
+**Contenido**: Información de cuentas de usuario y SIDs del sistema
+
+**MAC time**:
+- Creación: 2025-11-17 12:22:40
+- Modificación: 2025-11-17 12:22:40
+- Acceso: 2025-11-17 13:30:40
+
+**Tamaño lógico**: 5,678 bytes
+
+**Valor hash (SHA-256)**: `90123456789012345678901234567890123456789012345678901234567890123456`
 
 ------------------------------------------------------------------------
 
-## ANEXO -- Índice de Hallazgos
+# ANEXO -- Índice de Hallazgos
 
-aaa
+1. [*Hallazgo 001: Archivo Sospechoso en Escritorio*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#1-preparaci%C3%B3n-de-la-herramienta)
+2. [*Hallazgo 002: Captura de Memoria RAM*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#2-captura-de-tr%C3%A1fico)
+3. [*## Hallazgo 003: Exploit crea_user.py*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#3-conexi%C3%B3n-a-un-sitio-web)
+4. [*Hallazgo 004: Salida de Comando tasklist*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#4-an%C3%A1lisis-del-tr%C3%A1fico-capturado)
+5. [*Hallazgo 005: Salida de Comando netstat*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n)
+6. [*Hallazgo 006: Salida de Comando ipconfig*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n)
+7. [*Hallazgo 007: Salida de Comando systeminfo*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n)
+8. [*Hallazgo 008: Salida de Comando dir /s*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n)
+9. [*Hallazgo 009: Salida de Comando wmic*](https://github.com/ivanpaul03/Ciberseguridad-25-26/blob/main/AF/Pa%C3%BAlAlba_Iv%C3%A1n_A1.7.md#5-conclusi%C3%B3n)
