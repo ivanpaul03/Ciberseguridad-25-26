@@ -9,14 +9,14 @@
 
 ## Índice
 
-1. [*Introducción*](https://github.com/ivanpaul03/Ciberseguridad-25-26/edit/main/HE/Pa%C3%BAlAlba_Iv%C3%A1n_TalentScoutTech.md#1-introducci%C3%B3n)
-2. [*SQL Injection (SQLi)*](https://github.com/ivanpaul03/Ciberseguridad-25-26/edit/main/HE/Pa%C3%BAlAlba_Iv%C3%A1n_TalentScoutTech.md#2-sql-injection-sqli)
-3. [*CCross Site Scripting (XSS)*](https://github.com/ivanpaul03/Ciberseguridad-25-26/edit/main/HE/Pa%C3%BAlAlba_Iv%C3%A1n_TalentScoutTech.md#3-cross-site-scripting-xss)
-4. [*Control de acceso, autenticación y sesiones*](https://github.com/ivanpaul03/Ciberseguridad-25-26/edit/main/HE/Pa%C3%BAlAlba_Iv%C3%A1n_TalentScoutTech.md#4-control-de-acceso-autenticaci%C3%B3n-y-sesiones)
-5. [*Cross-Site Request Forgery (CSRF)*](https://github.com/ivanpaul03/Ciberseguridad-25-26/edit/main/HE/Pa%C3%BAlAlba_Iv%C3%A1n_TalentScoutTech.md#5-cross-site-request-forgery-csrf)
-6. [*Seguridad del Servidor*](https://github.com/ivanpaul03/Ciberseguridad-25-26/edit/main/HE/Pa%C3%BAlAlba_Iv%C3%A1n_TalentScoutTech.md#6-seguridad-del-servidor)
-7. [*Cross-Site Request Forgery (CSRF)*](https://github.com/ivanpaul03/Ciberseguridad-25-26/edit/main/HE/Pa%C3%BAlAlba_Iv%C3%A1n_TalentScoutTech.md#7-informe-de-pentesting)
-8. [*Referencias*](https://github.com/ivanpaul03/Ciberseguridad-25-26/edit/main/HE/Pa%C3%BAlAlba_Iv%C3%A1n_TalentScoutTech.md#8-referencias)
+1. [*Introducción*](#1-introducci%C3%B3n)
+2. [*SQL Injection (SQLi)*](#2-sql-injection-sqli)
+3. [*CCross Site Scripting (XSS)*](#3-cross-site-scripting-xss)
+4. [*Control de acceso, autenticación y sesiones*](#4-control-de-acceso-autenticaci%C3%B3n-y-sesiones)
+5. [*Cross-Site Request Forgery (CSRF)*](#5-cross-site-request-forgery-csrf)
+6. [*Seguridad del Servidor*](#6-seguridad-del-servidor)
+7. [*Cross-Site Request Forgery (CSRF)*](#7-informe-de-pentesting)
+8. [*Referencias*](#8-referencias)
 
 ---
 
@@ -357,4 +357,5 @@ Durante la auditoría se analizaron todos los componentes del servidor que aloja
 4. **OWASP Session Management Cheat Sheet.** Disponible en: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
 
 5. **OWASP CSRF Prevention Cheat Sheet.** Disponible en: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+
 
