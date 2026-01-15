@@ -15,8 +15,9 @@
 4. [*Control de acceso, autenticación y sesiones*](#4-control-de-acceso-autenticaci%C3%B3n-y-sesiones)
 5. [*Cross-Site Request Forgery (CSRF)*](#5-cross-site-request-forgery-csrf)
 6. [*Seguridad del Servidor*](#6-seguridad-del-servidor)
-7. [*Cross-Site Request Forgery (CSRF)*](#7-informe-de-pentesting)
+7. [*Informe de Pentesting*](#7-informe-de-pentesting)
 8. [*Referencias*](#8-referencias)
+9. [*Código corregido*](#9-c%C3%B3digo-corregido)
 
 ---
 
@@ -358,4 +359,10 @@ Durante la auditoría se analizaron todos los componentes del servidor que aloja
 
 5. **OWASP CSRF Prevention Cheat Sheet.** Disponible en: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
 
+---
 
+## 9. Código corregido
+
+El código corregido de la aplicación Talent ScoutTech se encuentra disponible en el siguiente repositorio público:
+
+https://github.com/ivanpaul03/Ciberseguridad-25-26/tree/main/HE/Web_Talent-ScoutTech
