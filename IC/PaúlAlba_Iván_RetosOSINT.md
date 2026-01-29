@@ -1,3 +1,19 @@
+<h1 align="center">Retos OSINT</h1>
+
+<img width="1400" height="788" alt="image" src="https://github.com/user-attachments/assets/0da2e58b-3add-4c8a-bacd-f4b44169cf70" />
+
+---
+
+## Índice
+
+1. [*Caso 1 – Jirafa en peligro de extinción*](#1-caso-1--jirafa-en-peligro-de-extinci%C3%B3n)
+2. [*Caso 2 – Verificación de un tweet sobre un ataque en Pakistán*](#2-caso-2--verificaci%C3%B3n-de-un-tweet-sobre-un-ataque-en-pakist%C3%A1n)
+3. [*Caso 3 – Identificación de una estación de tren*](#3-caso-3--identificaci%C3%B3n-de-una-estaci%C3%B3n-de-tren)
+4. [*Caso 4 – Geolocalización de un vídeo en Tirana*](#4-caso-4--geolocalizaci%C3%B3n-de-un-v%C3%ADdeo-en-tirana)
+5. [*Write-up final del trabajo OSINT*](#5-write-up-final-del-trabajo-osint)
+
+---
+
 ## 1. ***Caso 1 – Jirafa en peligro de extinción***
 
 ### Introducción del caso
