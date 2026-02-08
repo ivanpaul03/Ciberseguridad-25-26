@@ -1,150 +1,164 @@
----
-title: "A08. Mapa DNS y Recopilación OSINT"
-author: "Nombre del Alumno"
-date: "Febrero 2026"
----
+<h1 align="center">Mapa DNS "EL POZO"</h1>
 
-# Portada
+<p align="center">
+  <img width="310" height="163" alt="image" src="https://github.com/user-attachments/assets/d4fe2181-82bf-4ee6-a2be-6a2a10abb392" />
+</p>
 
-**Asignatura:** Auditoría de Seguridad  
 **Actividad:** A08 – Mapa DNS  
-**Alumno:** *TU NOMBRE*  
-**Curso:** *Curso / Grupo*  
-**Fecha:** *Fecha de entrega*  
+**Alumno:** *Iván Paúl Alba*  
+**Fecha:** *07/02/2026*  
 
 ---
 
-# Índice
+## Índice
 
 1. [Introducción](#1-introducción)  
 2. [Objetivo del Proyecto](#2-objetivo-del-proyecto)  
 3. [Metodología y Herramientas](#3-metodología-y-herramientas)  
-4. [Recopilación de Información](#4-recopilación-de-información)  
-5. [Información Whois](#5-información-whois)  
-6. [Análisis de Servidores DNS](#6-análisis-de-servidores-dns)  
-7. [Servidores de Correo](#7-servidores-de-correo)  
-8. [Búsqueda de Subdominios](#8-búsqueda-de-subdominios)  
-9. [Información Adicional Relevante](#9-información-adicional-relevante)  
-10. [Análisis y Justificación](#10-análisis-y-justificación)  
-11. [Conclusión](#11-conclusión)
+4. [Información Whois](#4-información-whois)  
+5. [Análisis de Servidores DNS](#5-análisis-de-servidores-dns)  
+6. [Servidores de Correo](#6-servidores-de-correo)  
+7. [Búsqueda de Subdominios](#7-búsqueda-de-subdominios)  
+8. [Información Adicional Relevante](#8-información-adicional-relevante)  
+9. [Análisis y Justificación](#9-análisis-y-justificación)  
+10. [Conclusión](#10-conclusión)
 
 ---
 
-# 1. Introducción
+## 1. Introducción
 
-En este trabajo realizo una primera fase de auditoría de seguridad utilizando técnicas de OSINT (Open Source Intelligence). El objetivo es recopilar información pública disponible en internet sobre la empresa “El POZO”, sin realizar ningún tipo de ataque ni acción intrusiva.
+En este trabajo hago una primera fase de auditoría usando técnicas de OSINT. Básicamente consiste en recopilar información pública de "El POZO" que hay disponible en internet, sin hacer ningún ataque ni nada intrusivo.
 
-Como estudiante de ciberseguridad, este ejercicio me permite entender la importancia de la fase de reconocimiento, ya que antes de analizar o proteger un sistema es fundamental conocer qué información está expuesta públicamente.
-
----
-
-# 2. Objetivo del Proyecto
-
-El objetivo principal de esta actividad es aprender a recopilar información relevante sobre la infraestructura digital de una empresa mediante fuentes abiertas. A lo largo del trabajo se identifican datos de registro del dominio, servidores DNS, servidores de correo, subdominios y otra información pública que puede resultar útil en una auditoría de seguridad.
+Este ejercicio me sirve para entender lo importante que es la fase de reconocimiento antes de cualquier auditoría de seguridad.
 
 ---
 
-# 3. Metodología y Herramientas
+## 2. Objetivo del Proyecto
 
-Para la realización de este proyecto he utilizado una metodología basada en OSINT, apoyándome principalmente en el uso de comandos desde la terminal y servicios públicos accesibles desde internet. Todas las herramientas empleadas permiten obtener información sin necesidad de autenticación y de forma completamente legal.
-
-Gran parte del proceso se ha documentado mediante capturas de pantalla, especialmente del uso del comando `whois`, para dejar constancia clara de los pasos realizados.
+El objetivo es aprender a recopilar información pública sobre la infraestructura de una empresa. Voy a buscar datos del dominio, servidores DNS, servidores de correo, subdominios y otra información útil para una auditoría.
 
 ---
 
-# 4. Recopilación de Información
+## 3. Metodología y Herramientas
 
-La recopilación de información se ha llevado a cabo de forma progresiva, comenzando por los datos más generales del dominio y avanzando hacia información más específica como servidores de correo y subdominios. Esta forma de trabajo ayuda a construir poco a poco un mapa de la infraestructura expuesta públicamente.
+He usado técnicas de OSINT con comandos de terminal y páginas web públicas. Todo legal y sin autenticación.
 
----
+Los comandos principales que usé fueron whois para ver el registro del dominio, nslookup y dig para consultar DNS y registros MX, y ping para verificar IPs.
 
-# 5. Información Whois
-
-La primera consulta realizada fue una búsqueda Whois del dominio principal de la empresa. Para ello utilicé el comando `whois` desde la terminal, que permite obtener información pública asociada al registro del dominio.
-
-📸 **Captura 1 – Consulta Whois del dominio**
-
-En esta captura debe verse el comando ejecutado y el resultado completo devuelto por la herramienta.
-
-
-**[INSERTAR AQUÍ CAPTURA TERMINAL WHOIS DOMINIO]**
-
-Tras analizar el resultado, me centré en localizar información relevante como el registrador, las fechas de creación y expiración y posibles referencias al proveedor de red.
-
-📸 **Captura 2 – Detalle de información relevante del Whois**
-
-**[INSERTAR AQUÍ CAPTURA DETALLE WHOIS]**
-
-A partir de los datos obtenidos, realicé consultas adicionales sobre direcciones IP que aparecían asociadas al dominio.
-
-📸 **Captura 3 – Consulta Whois sobre una dirección IP**
-
-
-**[INSERTAR AQUÍ CAPTURA WHOIS IP]**
-
-Este paso permite identificar qué entidad gestiona esa IP y obtener información adicional sobre la infraestructura.
+En cuanto a herramientas web, usé DNSDumpster para buscar subdominios, crt.sh para ver certificados SSL y theHarvester para recopilar emails y nombres.
 
 ---
 
-# 6. Análisis de Servidores DNS
+## 4. Información Whois
 
-Después de obtener la información Whois, continué analizando los servidores DNS del dominio. Este análisis permite saber qué servidores se encargan de resolver los nombres asociados a la empresa.
+Empecé por lo más general del dominio. Lo primero que hice fue un whois para ver quién ha registrado el dominio y obtener información básica sobre su infraestructura.
 
-📸 **Captura 4 – Identificación de servidores DNS**
+Ejecuté whois elpozo.es y me salió bastante información.
 
-**[INSERTAR AQUÍ CAPTURA DNS / NS]**
+<img width="600" alt="1-1" src="https://github.com/user-attachments/assets/777f730a-e110-4851-bb4d-ceb15b2ce62f" />
 
-El uso de servidores DNS bien configurados es fundamental para el correcto funcionamiento y la seguridad del dominio.
+Aquí pude ver el registrador del dominio, las fechas de creación y expiración, los servidores de nombres configurados, el estado del dominio y datos de contacto.
 
----
+<img width="600" alt="2-1" src="https://github.com/user-attachments/assets/91cbbaea-05a4-4194-8343-f6025400ce5f" />
 
-# 7. Servidores de Correo
+Luego hice whois de las IPs que aparecían asociadas para ver quién las gestiona.
 
-En esta fase analicé los servidores de correo electrónico asociados al dominio mediante la consulta de registros MX. Estos registros indican qué servidores reciben los correos de la empresa.
+<img width="500" alt="3-1" src="https://github.com/user-attachments/assets/8a0fdf08-1d75-42db-9c0f-dc721cce9af9" />
 
-📸 **Captura 5 – Consulta de registros MX**
+Con esto saqué información sobre el ASN, el ISP, el rango de IPs de la empresa y la ubicación de los servidores. Me sirve para saber quién administra realmente todo y si usan hosting externo o propio.
 
-**[INSERTAR AQUÍ CAPTURA MX]**
+También hice un nslookup del dominio para obtener más detalles:
 
-El correo electrónico es un servicio crítico y suele ser uno de los principales objetivos en ataques de seguridad, por lo que su análisis resulta especialmente relevante.
+<img width="300" alt="12-1" src="https://github.com/user-attachments/assets/4bb4cf0b-5f19-485e-b3e9-a2dbd127aff5" />
 
----
-
-# 8. Búsqueda de Subdominios
-
-Posteriormente realicé una búsqueda de subdominios asociados al dominio principal. Estos subdominios pueden corresponder a distintos servicios ofrecidos por la empresa.
-
-📸 **Captura 6 – Resultados de búsqueda de subdominios**
-
-**[INSERTAR AQUÍ CAPTURA SUBDOMINIOS]**
-
-El descubrimiento de subdominios ayuda a ampliar el conocimiento sobre la infraestructura expuesta públicamente.
+Esta consulta me dio información adicional sobre las IPs asociadas al dominio y me permitió verificar la resolución DNS del dominio principal.
 
 ---
 
-# 9. Información Adicional Relevante
+## 5. Análisis de Servidores DNS
 
-Además de la información técnica, busqué datos públicos adicionales como la presencia de la empresa en redes sociales o páginas corporativas. Esta información aporta contexto sobre la organización y puede ser útil en auditorías de tipo social.
+Después del whois, analicé los servidores DNS. Usé nslookup y dig para ver qué servidores DNS tiene configurados El POZO.
 
-📸 **Captura 7 – Presencia pública de la empresa**
+<img width="550" alt="4-2" src="https://github.com/user-attachments/assets/36bd41d1-70e0-4c1b-876f-dc066eda66a3" />
 
-**[INSERTAR AQUÍ CAPTURA WEB O RED SOCIAL]**
+Aquí hice la consulta de los registros NS del dominio para identificar los servidores de nombres. Luego consulté más detalles sobre los DNS:
 
----
-
-# 10. Análisis y Justificación
-
-Toda la información recopilada durante esta fase es relevante para una auditoría de seguridad, ya que permite construir una visión general de la infraestructura digital de la empresa. El uso de Whois ayuda a identificar quién gestiona los recursos, los DNS muestran la estructura del dominio y los subdominios revelan posibles servicios adicionales.
-
-Esta fase es clave antes de realizar análisis más técnicos o pruebas de seguridad.
+<img width="600" alt="5-1" src="https://github.com/user-attachments/assets/64764eae-e0bd-4c3f-8e08-12e47c6ea6e2" />
 
 ---
 
-# 11. Conclusión
+## 6. Servidores de Correo
 
-Con la realización de este trabajo he aprendido a utilizar técnicas de OSINT para recopilar información pública de una empresa de forma ética y organizada. He comprobado que es posible obtener una gran cantidad de datos útiles sin necesidad de realizar acciones intrusivas.
+Luego consulté los registros MX para ver qué servidores de correo usan. Ejecuté nslookup -type=MX elpozo.es y dig MX elpozo.es.
 
-Este ejercicio me ha permitido entender mejor la importancia de la fase de reconocimiento dentro de una auditoría de seguridad y me prepara para trabajos más avanzados en el ámbito de la ciberseguridad.
+<img width="500" alt="6-1" src="https://github.com/user-attachments/assets/3201fa0e-295a-4f84-9b71-6ea75bbdbc5f" />
+
+Esta consulta me mostró los servidores de correo configurados con sus prioridades. También hice consultas adicionales:
+
+<img width="500" alt="7-1" src="https://github.com/user-attachments/assets/8dd888e0-01f3-4e41-b903-a8071e0eb197" />
+
+Los registros MX me dijeron qué servidores reciben los emails de la empresa. Normalmente hay varios con diferentes prioridades por si uno falla. Esto es importante porque el correo es la puerta de entrada más común para ataques de phishing y malware. También me dice si usan servicios externos como Google o Microsoft, o si tienen servidores propios.
 
 ---
 
+## 7. Búsqueda de Subdominios
+
+Luego busqué subdominios asociados al dominio principal. Usé DNSDumpster, Sublist3r, crt.sh y búsquedas en Google con site:*.elpozo.es.
+
+<img width="650" alt="8-1" src="https://github.com/user-attachments/assets/c37096a7-f0c6-4042-9cad-985fb8bcfdcf" />
+
+Esta búsqueda me mostró varios subdominios activos. También probé con otras herramientas:
+
+<img width="550" alt="9-1" src="https://github.com/user-attachments/assets/8cc61568-d8e4-4e95-b46f-998ad035a1fe" />
+
+Y continué explorando más subdominios:
+
+<img width="800" alt="10-1" src="https://github.com/user-attachments/assets/b7ce4c00-b94e-4221-bc39-849a9052803c" />
+
+Aquí fui encontrando diferentes subdominios relacionados con distintos servicios:
+
+<img width="700" alt="11-1" src="https://github.com/user-attachments/assets/399b216a-cdf0-4bf5-a834-8d270f580cbb" />
+
+---
+
+## 8. Información Adicional Relevante
+
+Además de lo técnico, busqué información en redes sociales y páginas corporativas. Revisé LinkedIn para ver empleados, puestos de IT y qué tecnologías usan. En sus perfiles a veces mencionan si usan Windows Server, Linux, etc. También miré Facebook, Twitter e Instagram por si había algo filtrado.
+
+Recopilé información sobre la presencia online de la empresa y posibles datos públicos con TinEye Search:
+
+<img width="800" alt="13-1" src="https://github.com/user-attachments/assets/834836d8-c7a3-4fa0-b728-8f999e0a3949" />
+
+También usé herramientas de OSINT para recopilar más información de las redes sociales (Social Searcher):
+
+<img width="800" alt="14-1" src="https://github.com/user-attachments/assets/2dd8b166-30f7-4bca-b694-d22ac81f7879" />
+
+Y finalmente hice búsquedas adicionales para completar el perfil (Spider):
+
+<img width="550" alt="15-1" src="https://github.com/user-attachments/assets/7223ac32-e0cb-4b00-ab04-9eee1d3f7ae0" />
+
+Busqué ofertas de empleo que revelan qué tecnologías buscan, documentos PDF que pueden tener metadatos con nombres de usuarios, y usé Wayback Machine para ver versiones antiguas de la web. Con theHarvester recopilé emails y nombres de forma automática. Todo esto me da contexto sobre la organización y posibles vectores de ataque más sociales.
+
+---
+
+## 9. Análisis y Justificación
+
+Toda esta información es relevante para la auditoría porque me da una visión general de la infraestructura de la empresa.
+
+El Whois me dice quién gestiona el dominio y dónde están los servidores. Si el dominio expira, un atacante podría comprarlo. Los DNS son críticos porque si los comprometen pueden redirigir todo el tráfico a sitios falsos. Los servidores de correo son importantes porque la mayoría de ataques empiezan por email. Si usan Google o Microsoft probablemente tengan mejor protección que con servidores propios.
+
+Los subdominios son puertas de entrada potenciales. Muchas veces hay subdominios antiguos olvidados que están sin actualizar y son vulnerables. La información de empleados y redes sociales me da contexto sobre la organización y qué tecnologías usan internamente.
+
+En resumen, todo este reconocimiento pasivo me permite saber qué tienen expuesto, quién lo gestiona, qué tecnologías usan y cuáles son los puntos débiles potenciales. Es como hacer un mapa antes de empezar cualquier análisis más técnico.
+
+---
+
+## 10. Conclusión
+
+Con este trabajo he aprendido a usar técnicas de OSINT para recopilar información pública de una empresa. Me ha sorprendido la cantidad de datos útiles que se pueden conseguir sin hacer ningún ataque activo.
+
+Lo más destacable es que hay muchísima información pública disponible, más de la que pensaba. Las herramientas como whois o nslookup son fáciles de usar y no hace falta ser un experto. También he visto que la seguridad no es solo técnica, mucha información útil está en redes sociales o ofertas de empleo.
+
+Me he dado cuenta de que antes de cualquier auditoría hay un trabajo grande de investigación y reconocimiento. Sin esta fase, cualquier análisis estaría incompleto.
+
+---
