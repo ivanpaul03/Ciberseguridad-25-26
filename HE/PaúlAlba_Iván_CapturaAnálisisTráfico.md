@@ -2,7 +2,7 @@
 
 <h1 align="center"><img width="250" height="259" alt="image" src="https://github.com/user-attachments/assets/183857a0-6d67-4b7e-8209-5b0512cbcaae" /></h1>
 
-***Fecha**: 13/02/2026  
+**Fecha**: 13/02/2026  
 **Autor**: Iván Paúl Alba
 
 ---
@@ -94,7 +94,6 @@ En los paquetes HTTP se pueden ver claramente los campos:
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c71d08a5-2c24-491f-8bd7-0e2e1d4ccf31" />
 
-
 ---
 
 ## 3.2 ¿Qué ocurre cuando la web usa HTTPS?
@@ -131,6 +130,8 @@ Muchos routers permiten acceder mediante una página web interna (por ejemplo 19
 
 <img width="1911" height="1079" alt="image" src="https://github.com/user-attachments/assets/7184f132-bd0f-41fc-80a8-ff5736aa4f44" />
 
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/4459c3b1-a0ad-46c3-b128-95a78fa9ec7b" />
+
 ---
 
 ## Explicación
@@ -160,8 +161,17 @@ TELNET es un protocolo antiguo que no cifra la información. Todo lo que se escr
 
 ## Captura – Credenciales en TELNET
 
-[ESPACIO PARA CAPTURA DE PANTALLA – TRAFICO TELNET CON USER Y PASSWORD]
+<img width="1051" height="663" alt="image" src="https://github.com/user-attachments/assets/2d09716b-f051-4c0e-8313-4945b15a1bbb" />
 
+<img width="395" height="132" alt="image" src="https://github.com/user-attachments/assets/3235127f-36fb-4ad1-9fce-e8567469b82c" />
+
+<img width="1918" height="909" alt="image" src="https://github.com/user-attachments/assets/102732d8-3e49-4397-a19c-f3b1b6cddd31" />
+
+```bash
+Seguir --> TCP Stream
+```
+
+<img width="710" height="439" alt="image" src="https://github.com/user-attachments/assets/16e9261a-e8de-4339-bec6-0c67165ed2c2" />
 
 ---
 
@@ -178,11 +188,8 @@ Esto demuestra que TELNET no es seguro y que hoy en día debería utilizarse SSH
 
 # 6. Conclusiones
 
-Después de realizar estas pruebas he podido comprobar que:
+Tras realizar estas pruebas, se pudo comprobar que la información transmitida a través de comunicaciones no cifradas es fácilmente interceptable. Protocolos como HTTP y TELNET resultan inseguros, ya que los datos, incluyendo credenciales, se envían en texto plano.
 
-- Si una comunicación no está cifrada, es muy fácil interceptar información sensible.
-- Protocolos como HTTP o TELNET son inseguros.
-- HTTPS y SSH protegen la información porque cifran los datos.
-- En llamadas P2P de Telegram se puede obtener la IP pública si no se configura correctamente la privacidad.
+Por el contrario, protocolos como HTTPS y SSH protegen la información mediante cifrado, evitando que terceros puedan acceder a datos sensibles. Además, se observó que, en llamadas P2P de aplicaciones como Telegram, es posible determinar la dirección IP pública si no se configuran correctamente las opciones de privacidad.
 
-Esta práctica me ha ayudado a entender mejor cómo funciona el tráfico en red y la importancia del cifrado para proteger la información.
+Esta práctica permitió comprender mejor el funcionamiento del tráfico en red y reforzó la importancia de utilizar cifrado para garantizar la seguridad de la información.
