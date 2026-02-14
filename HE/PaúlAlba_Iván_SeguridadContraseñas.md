@@ -15,7 +15,7 @@
 2. [Crackeo de hashes (3 y 4 caracteres)](#2-crackeo-de-hashes-3-y-4-caracteres)  
 3. [Cálculo de combinaciones y estimación de tiempo](#3-cálculo-de-combinaciones-y-estimación-de-tiempo)  
 4. [Uso de GPU en ataques de fuerza bruta](#4-uso-de-gpu-en-ataques-de-fuerza-bruta)  
-5. [Crackeo de contraseñas de 8 caracteres](#5-crackeo-de-contraseñas-de-8-caracteres)  
+5. [Crackeo de contraseñas de 8 caracteres](#5-modificación-del-script-para-contraseñas-de-8-caracteres)  
 
 ---
 
@@ -56,7 +56,7 @@ Además, estimar el tiempo que sería necesario en la máquina utilizada para re
 
 ---
 
-### 5. Modificación del script para contraseñas de 8 caracteres
+## 5. Modificación del script para contraseñas de 8 caracteres
 
 Modificar el script para encontrar las dos contraseñas de 8 caracteres que se indican en la tabla que viene a continuación. Explicar qué habéis hecho y adjuntar el código del script modificado.
 
