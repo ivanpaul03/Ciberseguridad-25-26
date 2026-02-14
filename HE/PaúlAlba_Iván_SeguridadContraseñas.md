@@ -15,7 +15,7 @@
 2. [Crackeo de hashes (3 y 4 caracteres)](#2-crackeo-de-hashes-3-y-4-caracteres)  
 3. [Cálculo de combinaciones y estimación de tiempo](#3-cálculo-de-combinaciones-y-estimación-de-tiempo)  
 4. [Uso de GPU en ataques de fuerza bruta](#4-uso-de-gpu-en-ataques-de-fuerza-bruta)  
-5. [Crackeo de contraseñas de 8 caracteres](#5-modificación-del-script-para-contraseñas-de-8-caracteres)  
+5. [Modificación del script para contraseñas de 8 caracteres](#5-modificación-del-script-para-contraseñas-de-8-caracteres)  
 
 ---
 
