@@ -6,14 +6,14 @@
 ---
 
 ## Índice
-1. [Auditoría de mi sitio web](#1-auditoría-de-mi-sitio-web)
+1. [Análisis de mi sitio web](#1-análisis-de-mi-sitio-web)
 2. [¿Por qué mi certificado es válido?](#2-por-qué-mi-certificado-es-válido)
 3. [Análisis de certificados erróneos](#3-análisis-de-certificados-erróneos)
 4. [Conclusiones de la auditoría](#4-conclusiones-de-la-auditoría)
 
 ---
 
-## 1. Auditoría de mi sitio web
+## 1. Análisis de mi sitio web
 Para terminar la práctica, he querido poner a prueba mi servidor de AWS usando **SSL Labs**, que es como un "examen médico" para la seguridad de las webs. He metido mi dominio `ivan-proyecto-bastionado.duckdns.org` y, tras unos minutos de análisis, el resultado ha sido fantástico: ¡tengo una **A**!
 
 Esto me da mucha tranquilidad porque significa que no solo tengo el candado puesto, sino que la configuración por dentro es robusta y segura contra ataques modernos.
