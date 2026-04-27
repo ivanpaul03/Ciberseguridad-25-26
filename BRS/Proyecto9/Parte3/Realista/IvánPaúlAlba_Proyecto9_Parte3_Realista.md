@@ -9,7 +9,8 @@
 1. [Análisis de mi sitio web](#1-análisis-de-mi-sitio-web)
 2. [¿Por qué mi certificado es válido?](#2-por-qué-mi-certificado-es-válido)
 3. [Análisis de certificados erróneos](#3-análisis-de-certificados-erróneos)
-4. [Conclusiones de la auditoría](#4-conclusiones-de-la-auditoría)
+4. [Comparativa: Mi servidor vs. Google](#4-comparativa-mi-servidor-vs-google)
+5. [Conclusiones de la auditoría](#5-conclusiones-de-la-auditoría)
 
 ---
 
@@ -49,7 +50,21 @@ Aquí el certificado lo firma alguien que no está en la lista de "autoridades d
 
 <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/59da5aeb-4cf8-4d56-ac39-ad8277871ff8" />
 
-## 4. Conclusiones de la auditoría
+## 4. Comparativa: Mi servidor vs. Google
+Después de analizar mi sitio y compararlo con el certificado de Google (usando los datos de SSL Labs y el navegador), he sacado estas conclusiones sobre cómo se mueve la seguridad en el mundo real:
+
+| Característica | Mi Servidor (AWS + Let's Encrypt) | Google (Servidor Comercial) |
+| :--- | :--- | :--- |
+| **Calificación SSL Labs** | **A** (Excelente configuración) | **A+** (Configuración máxima con HSTS) |
+| **Tipo de Certificado** | **DV (Domain Validation)**: Solo confirma el dominio. | **OV/EV (Org. Validation)**: Confirma la empresa legal. |
+| **Autoridad (CA)** | Let's Encrypt (Gratuita y abierta). | Google Trust Services (Propia). |
+| **Periodo de validez** | **90 días**: Renovación automática. | **Casi 1 año**: Renovaciones más largas. |
+| **Protocolos** | TLS 1.2 y 1.3. | TLS 1.3 (Forzan la última versión). |
+
+### ¿En qué se diferencian realmente?
+Aunque los dos tenemos una nota **A** y el candado sale igual de verde, la diferencia principal es la **confianza organizacional**. Mi certificado de Let's Encrypt es perfecto para proteger los datos, pero el de Google además garantiza la identidad legal de la empresa. Además, Google suele sacar un **A+** porque usa **HSTS**, obligando a que la conexión sea siempre segura sin excepción.
+
+## 5. Conclusiones de la auditoría
 Hacer estos escaneos me ha servido para ver la diferencia entre "tener un certificado" y "tenerlo bien puesto". Mi servidor en AWS ha pasado con nota porque nos hemos molestado en usar herramientas oficiales y configuraciones modernas. 
 
 Ahora entiendo que cuando mi navegador me saca un aviso rojo, suele ser por uno de estos tres motivos que he analizado. ¡Práctica terminada y servidor seguro!
